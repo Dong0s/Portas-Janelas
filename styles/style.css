@@ -3,15 +3,15 @@
 
 /* Estilos básicos */
 :root {
-    --cor-fundo: #941a12ec ;
-    --cor-principal: #E0E0E0;
-    --cor-principal2: #ECF0F1;
+    --cor-fundo: #ffff00 ;
+    --cor-principal: rgb(248, 248, 88);
+    --cor-principal2: rgb(208, 237, 250);
 }
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #383838;
+    color: rgb(56, 56, 56);
     line-height: 1.6;
     background-color: var(--cor-principal2);
 }
@@ -24,7 +24,7 @@ body {
 
 .logo {
     font-family: 'Lobster', cursive;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #05037a;
     text-align: center;
 }
@@ -75,7 +75,7 @@ body {
 }
 
 .product {
-    background: white;
+    background: var(--cor-principal2);
     border: 1px solid #7a7373;
     padding: 15px;
     flex: 1 1 calc(25% - 20px); /* Ajuste para 4 colunas */
@@ -116,6 +116,7 @@ footer {
     padding: 20px 0;
     border-top: 1px solid rgb(248, 248, 88);
     margin-top: 40px;
+    
 }
 .contatos_1{
     text-align: center;
