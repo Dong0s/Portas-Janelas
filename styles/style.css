@@ -75,7 +75,7 @@ body {
 }
 
 .product {
-    background: var(--cor-principal2);
+    background: white;
     border: 1px solid #7a7373;
     padding: 15px;
     flex: 1 1 calc(25% - 20px); /* Ajuste para 4 colunas */
