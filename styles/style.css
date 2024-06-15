@@ -75,7 +75,7 @@ body {
 }
 
 .product {
-    background: var(--cor-principal2);
+    background: white;
     border: 1px solid #7a7373;
     padding: 15px;
     flex: 1 1 calc(25% - 20px); /* Ajuste para 4 colunas */
@@ -116,6 +116,10 @@ footer {
     padding: 20px 0;
     border-top: 1px solid rgb(248, 248, 88);
     margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     
 }
 .contatos_1{
