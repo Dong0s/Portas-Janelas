@@ -26,7 +26,7 @@ body {
 }
 
 .logo {
-    font-family: 'Lobster', cursive;
+    font-family: var(--font-2);
     font-size: 3em;
     color: #05037a;
     text-align: center;
@@ -64,6 +64,13 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     font-family: var(--font-1) ;
+}
+.sobre_n{
+    font-family: var(--font-2);
+}
+.sobre_ns{
+    font-family: var(--font-2);
+    font-size: 20px;
 }
 .fonte_mais{
     font-size: 42px;
@@ -137,11 +144,11 @@ footer {
 }
 .contatos_1{
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: var(--font-2);
 }
 .contatos_2{
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: var(--font-2);
     font-size: 20px;
 }
 .contatos_3{
