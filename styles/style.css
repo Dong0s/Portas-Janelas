@@ -71,6 +71,7 @@ body {
     border: 2px solid #000000;
     background-color: var(--cor-principal);
     color: #05037a ;
+    border-radius: 24px;
 
 }
 
@@ -142,6 +143,18 @@ footer {
     text-align: center;
     font-family: 'Lobster', cursive;
     font-size: 20px;
+}
+.contatos_3{
+   display: flex;
+   justify-content: center;
+  text-decoration: none;
+  font-family: var(--font-2);
+  gap: 12px;
+  align-items: center;
+  border-radius: 4px;
+  color: #05037a;
+  padding: 18px;
+
 }
 .menu_back:hover{
     background-color: var(--cor-fundo);
