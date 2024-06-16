@@ -156,6 +156,11 @@ footer {
   padding: 18px;
 
 }
+iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .menu_back:hover{
     background-color: var(--cor-fundo);
 
