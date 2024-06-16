@@ -188,7 +188,14 @@ iframe{
 
 @media (max-width: 768px) {
     .product {
-        flex: 1 1 calc(50% - 20px); /* Ajuste para 2 colunas em telas menores */
+        flex: 1 1 100%; /* Ajuste para 1 coluna em telas muito pequenas */
+    }
+    .menu {
+        flex-direction: column;
+       text-align: center;
+    }
+    .menu li {
+        margin: 10px 0;
     }
 }
 
@@ -198,6 +205,7 @@ iframe{
     }
     .menu {
         flex-direction: column;
+       text-align: center;
     }
     .menu li {
         margin: 10px 0;
