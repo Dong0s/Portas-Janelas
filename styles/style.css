@@ -24,12 +24,15 @@ body {
     padding: 20px 0;
     border-bottom: 20px solid var(--cor-principal2);
 }
-
 .logo {
     font-family: var(--font-2);
     font-size: 3em;
     color: #05037a;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+
 }
 
 .navbar {
