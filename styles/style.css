@@ -50,6 +50,7 @@ body {
     margin: 0; /* Remove espaçamento externo */
     display: flex; /* Usa flexbox para alinhamento */
     justify-content: center; /* Centraliza horizontalmente */
+    font-size: 24px;
 }
 
 /* Estilo dos itens do menu */
@@ -82,7 +83,9 @@ body {
 .sobre_n {
     font-family: var(--font-2); /* Fonte Bebas Neue */
 }
-
+.link_home{
+    text-decoration: none;
+}
 /* Estilo de texto com a fonte Bebas Neue e tamanho específico */
 .sobre_ns {
     font-family: var(--font-2); /* Fonte Bebas Neue */
@@ -167,14 +170,6 @@ footer {
     bottom: 0; /* Posicionado na parte inferior */
     width: 100%; /* Largura total */
 }
-.borda_a{
-    border: 3px solid var(--cor-fundo);
-    border-radius: 24px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 8px;
-}
 /* Estilo de textos de contato */
 .contatos_1 {
     text-align: center; /* Centraliza o texto */
@@ -190,7 +185,8 @@ footer {
 /* Estilo de links de contato */
 .contatos_3 {
     display: flex; /* Usa flexbox para alinhamento */
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center; /*Alinha no meio */
+    flex-direction: row; /*Bota lado a*/
     text-decoration: none; /* Remove sublinhado */
     font-family: var(--font-2); /* Fonte Bebas Neue */
     gap: 12px; /* Espaçamento entre itens */
@@ -198,6 +194,9 @@ footer {
     border-radius: 4px; /* Bordas arredondadas */
     color: #05037a; /* Cor do texto */
     padding: 18px; /* Espaçamento interno */
+    max-width: 100%;
+    height: auto;
+
 }
 
 /* Estilo de iframe */
@@ -243,9 +242,10 @@ iframe {
 }
 .borda_a {
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 80%;
+    border: 3px solid var(--cor-fundo);
+    border-radius: 24px;
+    
 }
 
 /* Ajustes adicionais para telas menores */
