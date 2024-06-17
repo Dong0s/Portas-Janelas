@@ -1,213 +1,236 @@
-/* Importação de fontes */
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Estilos básicos */
+/* Definição de variáveis CSS para cores e fontes */
 :root {
-    --cor-fundo: #ffff00 ;
-    --cor-principal: rgb(248, 248, 88);
-    --cor-principal2: rgb(208, 237, 250);
-
-    --font-1: 'Roboto', sans-serif;
-    --font-2: "Bebas Neue", sans-serif;
+    --cor-fundo: #ffff00; /* Cor de fundo usada nos hovers */
+    --cor-principal: rgb(248, 248, 88); /* Cor principal do tema */
+    --cor-principal2: rgb(208, 237, 250); /* Cor secundária do tema */
+    --font-1: 'Roboto', sans-serif; /* Fonte primária */
+    --font-2: 'Bebas Neue', sans-serif; /* Fonte secundária */
 }
+
+/* Estilo básico do corpo da página */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: rgb(56, 56, 56);
-    line-height: 1.6;
-    background-color: var(--cor-principal2);
+    font-family: var(--font-1); /* Define a fonte primária */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+    color: rgb(56, 56, 56); /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    background-color: var(--cor-principal2); /* Cor de fundo */
 }
 
+/* Estilo do cabeçalho */
 .header {
-   background-color: var(--cor-principal);
-    padding: 20px 0;
-    border-bottom: 20px solid var(--cor-principal2);
+    background-color: var(--cor-principal); /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Espaçamento interno */
+    border-bottom: 20px solid var(--cor-principal2); /* Borda inferior */
 }
+
+/* Estilo do logotipo no cabeçalho */
 .logo {
-    font-family: var(--font-2);
-    font-size: 3em;
-    color: #05037a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3%;
-
+    font-family: var(--font-2); /* Fonte do logotipo */
+    font-size: 3em; /* Tamanho da fonte do logotipo */
+    color: #05037a; /* Cor do texto do logotipo */
+    display: flex; /* Usa flexbox para alinhamento */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-right: 3%; /* Margem direita */
 }
 
+/* Estilo da barra de navegação */
 .navbar {
-    margin-top: 10px;
+    margin-top: 10px; /* Espaçamento superior */
 }
 
+/* Estilo do menu de navegação */
 .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove espaçamento interno */
+    margin: 0; /* Remove espaçamento externo */
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
+/* Estilo dos itens do menu */
 .menu li {
-    margin-right: 20px;
+    margin-right: 20px; /* Espaçamento entre itens */
 }
 
+/* Estilo dos links no menu */
 .menu li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave na cor */
 }
 
+/* Estilo dos links no menu quando hover */
 .menu li a:hover {
-    color: #000000;
+    color: #000000; /* Cor do texto ao passar o mouse */
 }
 
+/* Estilo do container principal */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    font-family: var(--font-1) ;
-}
-.sobre_n{
-    font-family: var(--font-2);
-}
-.sobre_ns{
-    font-family: var(--font-2);
-    font-size: 20px;
-}
-.fonte_mais{
-    font-size: 42px;
-    font-family: var(--font-2);
-    border: 2px solid #000000;
-    background-color: var(--cor-principal);
-    color: #05037a ;
-    border-radius: 24px;
-
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 15px; /* Espaçamento interno */
+    font-family: var(--font-1); /* Fonte do container */
 }
 
+/* Estilo de texto com a fonte Bebas Neue */
+.sobre_n {
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+}
+
+/* Estilo de texto com a fonte Bebas Neue e tamanho específico */
+.sobre_ns {
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo de botões ou elementos destacados */
+.fonte_mais {
+    font-size: 42px; /* Tamanho da fonte */
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+    border: 2px solid #000000; /* Borda preta */
+    background-color: var(--cor-principal); /* Cor de fundo */
+    color: #05037a; /* Cor do texto */
+    border-radius: 24px; /* Bordas arredondadas */
+}
+
+/* Estilo das seções */
 .section {
-    padding: 60px 0;
-    text-align: center;
+    padding: 60px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo da seção de produtos */
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Usa flexbox para alinhamento */
+    flex-wrap: wrap; /* Permite que itens quebrem linha */
+    gap: 20px; /* Espaçamento entre itens */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
+/* Estilo de cada produto */
 .product {
-    background: white;
-    border: 1px solid #7a7373;
-    padding: 15px;
-    flex: 1 1 calc(25% - 20px); /* Ajuste para 4 colunas */
-    box-sizing: border-box;
-    text-align: center;
-    transition: transform 0.3s;
+    background: white; /* Fundo branco */
+    border: 1px solid #7a7373; /* Borda cinza */
+    padding: 15px; /* Espaçamento interno */
+    flex: 1 1 calc(25% - 20px); /* Ajusta para 4 colunas */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    text-align: center; /* Centraliza o texto */
+    transition: transform 0.3s; /* Transição suave ao escalar */
 }
 
+/* Efeito de hover nos produtos */
 .product:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
 }
 
+/* Estilo das imagens dos produtos */
 .product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    max-width: 100%; /* Largura máxima de 100% */
+    height: auto; /* Altura automática */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Estilo dos títulos dos produtos */
 .product h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.5em; /* Tamanho da fonte */
+    margin: 10px 0; /* Espaçamento superior e inferior */
 }
 
+/* Estilo do preço dos produtos */
 .product .price {
-    font-size: 1.2em;
-    color: #83710c;
-    margin: 10px 0;
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #83710c; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento superior e inferior */
 }
 
+/* Estilo das parcelas dos produtos */
 .product .installments {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
 }
 
+/* Estilo do rodapé */
 footer {
-    background-color: var(--cor-principal);
-    text-align: center;
-    font-family: var(--font-2);
-    padding: 16px 0;
-    border-top: 1px solid rgb(248, 248, 88);
-    margin-top: 40px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-
-}
-.contatos_1{
-    text-align: center;
-    font-family: var(--font-2);
-}
-.contatos_2{
-    text-align: center;
-    font-family: var(--font-2);
-    font-size: 20px;
-}
-.contatos_3{
-   display: flex;
-   justify-content: center;
-  text-decoration: none;
-  font-family: var(--font-2);
-  gap: 12px;
-  align-items: center;
-  border-radius: 4px;
-  color: #05037a;
-  padding: 18px;
-
-}
-iframe{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.menu_back:hover{
-    background-color: var(--cor-fundo);
-
-}
-.menu_back2:hover{
-    background-color: var(--cor-fundo);
-}
-.menu_back3:hover{
-    background-color: var(--cor-fundo);
-}
-.menu_back4:hover{
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-principal); /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto */
+    font-family: var(--font-2); /* Fonte do rodapé */
+    padding: 16px 0; /* Espaçamento interno */
+    border-top: 1px solid rgb(248, 248, 88); /* Borda superior */
+    margin-top: 40px; /* Espaçamento superior */
+    position: relative; /* Posição relativa */
+    bottom: 0; /* Posicionado na parte inferior */
+    width: 100%; /* Largura total */
 }
 
+/* Estilo de textos de contato */
+.contatos_1 {
+    text-align: center; /* Centraliza o texto */
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+}
 
+.contatos_2 {
+    text-align: center; /* Centraliza o texto */
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo de links de contato */
+.contatos_3 {
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: var(--font-2); /* Fonte Bebas Neue */
+    gap: 12px; /* Espaçamento entre itens */
+    align-items: center; /* Alinha itens verticalmente */
+    border-radius: 4px; /* Bordas arredondadas */
+    color: #05037a; /* Cor do texto */
+    padding: 18px; /* Espaçamento interno */
+}
+
+/* Estilo de iframe */
+iframe {
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo de hover para os links do menu */
+.menu_back:hover,
+.menu_back2:hover,
+.menu_back3:hover,
+.menu_back4:hover {
+    background-color: var(--cor-fundo); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .product {
-        flex: 1 1 100%; /* Ajuste para 1 coluna em telas muito pequenas */
+        flex: 1 1 100%; /* Ajusta para 1 coluna em telas pequenas */
     }
     .menu {
-        flex-direction: column;
-       text-align: center;
+        flex-direction: column; /* Alinha verticalmente */
+        text-align: center; /* Centraliza o texto */
     }
     .menu li {
-        margin: 10px 0;
+        margin: 10px 0; /* Espaçamento entre itens */
     }
 }
 
 @media (max-width: 480px) {
     .product {
-        flex: 1 1 100%; /* Ajuste para 1 coluna em telas muito pequenas */
+        flex: 1 1 100%; /* Ajusta para 1 coluna em telas muito pequenas */
     }
     .menu {
-        flex-direction: column;
-       text-align: center;
+        flex-direction: column; /* Alinha verticalmente */
+        text-align: center; /* Centraliza o texto */
     }
     .menu li {
-        margin: 10px 0;
+        margin: 10px 0; /* Espaçamento entre itens */
     }
 }
