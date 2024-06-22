@@ -51,17 +51,19 @@ body {
     display: flex; /* Usa flexbox para alinhamento */
     justify-content: center; /* Centraliza horizontalmente */
     font-size: 24px;
+    
 }
 
 /* Estilo dos itens do menu */
 .menu li {
-    margin-right: 20px; /* Espaçamento entre itens */
+    margin-right: 36px; /* Espaçamento entre itens */
+    margin-left: 36px;
 }
 
 /* Estilo dos links no menu */
 .menu li a {
     text-decoration: none; /* Remove sublinhado */
-    color: #333; /* Cor do texto */
+    color: #05037a; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
     transition: color 0.3s; /* Transição suave na cor */
 }
@@ -112,14 +114,14 @@ body {
 .products {
     display: flex; /* Usa flexbox para alinhamento */
     flex-wrap: wrap; /* Permite que itens quebrem linha */
-    gap: 20px; /* Espaçamento entre itens */
+    gap: 30px; /* Espaçamento entre itens */
     justify-content: center; /* Centraliza horizontalmente */
 }
 
 /* Estilo de cada produto */
 .product {
     background: white; /* Fundo branco */
-    border: 1px solid #7a7373; /* Borda cinza */
+    border: 4px solid black; /* Borda cinza */
     padding: 15px; /* Espaçamento interno */
     flex: 1 1 calc(25% - 20px); /* Ajusta para 4 colunas */
     box-sizing: border-box; /* Inclui borda e padding no tamanho total */
@@ -129,7 +131,7 @@ body {
 
 /* Efeito de hover nos produtos */
 .product:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.10); /* Aumenta o tamanho ao passar o mouse */
 }
 
 /* Estilo das imagens dos produtos */
@@ -211,7 +213,8 @@ iframe {
 .menu_back2:hover,
 .menu_back3:hover,
 .menu_back4:hover {
-    background-color: var(--cor-fundo); /* Cor de fundo ao passar o mouse */
+    background-color: var(--cor-fundo);
+
 }
 
 /* Estilos responsivos */
