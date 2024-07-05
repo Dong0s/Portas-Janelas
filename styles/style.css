@@ -216,9 +216,16 @@ iframe {
     background-color: var(--cor-fundo);
 
 }
+.borda_a {
+    max-width: 100%;
+    width: 100%;
+    border: 3px solid var(--cor-fundo);
+    border-radius: 24px;
+    
+}
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .product {
         flex: 1 1 100%; /* Ajusta para 1 coluna em telas pequenas */
     }
@@ -229,40 +236,12 @@ iframe {
     .menu li {
         margin: 10px 0; /* Espaçamento entre itens */
     }
-}
-
-@media (max-width: 480px) {
-    .product {
-        flex: 1 1 100%; /* Ajusta para 1 coluna em telas muito pequenas */
+    .sumir1{
+        display:none ;
     }
-    .menu {
-        flex-direction: column; /* Alinha verticalmente */
-        text-align: center; /* Centraliza o texto */
-    }
-    .menu li {
-        margin: 10px 0; /* Espaçamento entre itens */
-    }
-}
-.borda_a {
-    max-width: 100%;
-    width: 80%;
-    border: 3px solid var(--cor-fundo);
-    border-radius: 24px;
-    
-}
-
-/* Ajustes adicionais para telas menores */
-@media (max-width: 600px) {
-    .borda_a {
-        max-width: 90%;
-        margin: 8px auto;
+    .logo{
+        text-align: center;
     }
 }
 
-/* Ajustes adicionais para telas maiores */
-@media (min-width: 1200px) {
-    .borda_a {
-        max-width: 70%;
-        margin: 8px auto;
-    }
-}
+
