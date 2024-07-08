@@ -7,7 +7,7 @@
     --cor-principal: rgb(248, 248, 88); /* Cor principal do tema */
     --cor-principal2: rgb(208, 237, 250); /* Cor secundária do tema */
     --font-1: 'Roboto', sans-serif; /* Fonte primária */
-    --font-2: 'Bebas Neue', sans-serif; /* Fonte secundária */
+    --font-2: 'Lobster', sans-serif; /* Fonte secundária */
 }
 
 /* Estilo básico do corpo da página */
@@ -34,12 +34,12 @@ body {
     display: flex; /* Usa flexbox para alinhamento */
     align-items: center; /* Alinha itens verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    margin-right: 3%; /* Margem direita */
+    margin-right: auto; /* Margem direita */
 }
 
 /* Estilo da barra de navegação */
 .navbar {
-    margin-top: 10px; /* Espaçamento superior */
+    margin-top: auto; /* Espaçamento superior */
 }
 
 /* Estilo do menu de navegação */
@@ -79,33 +79,30 @@ body {
     padding: 0 15px; /* Espaçamento interno */
     font-family: var(--font-1); /* Fonte do container */
 }
-
-/* Estilo de texto com a fonte Bebas Neue */
-.sobre_n {
-    font-family: var(--font-2); /* Fonte Bebas Neue */
-}
 .link_home{
     text-decoration: none;
 }
 /* Estilo de texto com a fonte Bebas Neue e tamanho específico */
 .sobre_ns {
     font-family: var(--font-2); /* Fonte Bebas Neue */
-    font-size: 20px; /* Tamanho da fonte */
+    font-size: 24px; /* Tamanho da fonte */
+    margin-top: -20px;
 }
 
 /* Estilo de botões ou elementos destacados */
 .fonte_mais {
-    font-size: 42px; /* Tamanho da fonte */
+    font-size: 72px; /* Tamanho da fonte */
     font-family: var(--font-2); /* Fonte Bebas Neue */
-    border: 2px solid #000000; /* Borda preta */
-    background-color: var(--cor-principal); /* Cor de fundo */
     color: #05037a; /* Cor do texto */
-    border-radius: 24px; /* Bordas arredondadas */
+    margin-top: auto;
+}
+.detalhes1{
+    color: #05037a;
 }
 
 /* Estilo das seções */
 .section {
-    padding: 60px 0; /* Espaçamento interno */
+    padding: px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
 }
 
@@ -218,6 +215,11 @@ iframe {
 }
 
 /* Estilos responsivos */
+@media (max-width: 1800px){
+    .logo{
+text-align: center;
+    }
+}
 @media (max-width: 1000px) {
     .product {
         flex: 1 1 100%; /* Ajusta para 1 coluna em telas pequenas */
