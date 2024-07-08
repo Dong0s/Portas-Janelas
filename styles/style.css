@@ -23,7 +23,6 @@ body {
 /* Estilo do cabeçalho */
 .header {
     background-color: var(--cor-principal); /* Cor de fundo do cabeçalho */
-    padding: 20px 0; /* Espaçamento interno */
     border-bottom: 20px solid var(--cor-principal2); /* Borda inferior */
 }
 
@@ -46,18 +45,18 @@ body {
 /* Estilo do menu de navegação */
 .menu {
     list-style: none; /* Remove marcadores de lista */
-    padding: 0; /* Remove espaçamento interno */
+    padding: 5px; /* Remove espaçamento interno */
     margin: 0; /* Remove espaçamento externo */
     display: flex; /* Usa flexbox para alinhamento */
     justify-content: center; /* Centraliza horizontalmente */
     font-size: 24px;
-    
+    background-color:rgb(175, 235, 253) ;
 }
 
 /* Estilo dos itens do menu */
 .menu li {
-    margin-right: 36px; /* Espaçamento entre itens */
-    margin-left: 36px;
+    margin-right: 150px; /* Espaçamento entre itens */
+    margin-left: 150px;
 }
 
 /* Estilo dos links no menu */
@@ -70,7 +69,7 @@ body {
 
 /* Estilo dos links no menu quando hover */
 .menu li a:hover {
-    color: #000000; /* Cor do texto ao passar o mouse */
+    color: rgb(255, 255, 85); /* Cor do texto ao passar o mouse */
 }
 
 /* Estilo do container principal */
@@ -207,21 +206,15 @@ iframe {
     justify-content: center; /* Centraliza horizontalmente */
     width: 100%; /* Largura total */
 }
-
-/* Estilo de hover para os links do menu */
-.menu_back:hover,
-.menu_back2:hover,
-.menu_back3:hover,
-.menu_back4:hover {
-    background-color: var(--cor-fundo);
-
-}
 .borda_a {
     max-width: 100%;
     width: 100%;
     border: 3px solid var(--cor-fundo);
     border-radius: 24px;
     
+}
+.sumir1{
+ margin: 40px;
 }
 
 /* Estilos responsivos */
