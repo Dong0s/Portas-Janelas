@@ -64,7 +64,7 @@ body {
     text-decoration: none; /* Remove sublinhado */
     color: #05037a; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
-    transition: color 0.3s; /* Transição suave na cor */
+    transition: color 0.5s; /* Transição suave na cor */
 }
 
 /* Estilo dos links no menu quando hover */
@@ -117,12 +117,12 @@ body {
 /* Estilo de cada produto */
 .product {
     background: white; /* Fundo branco */
-    border: 4px solid black; /* Borda cinza */
-    padding: 15px; /* Espaçamento interno */
+    border: 4px solid black; /* Borda preta */
+    padding: 5px; /* Espaçamento interno */
     flex: 1 1 calc(25% - 20px); /* Ajusta para 4 colunas */
     box-sizing: border-box; /* Inclui borda e padding no tamanho total */
     text-align: center; /* Centraliza o texto */
-    transition: transform 0.3s; /* Transição suave ao escalar */
+    transition: transform 0.5s; /* Transição suave ao escalar */
 }
 
 /* Efeito de hover nos produtos */
