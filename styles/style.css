@@ -172,7 +172,7 @@ footer {
 .contatos_1 {
     text-align: center; /* Centraliza o texto */
     font-family: var(--font-2); /* Fonte Bebas Neue */
-}
+    color: #05037a;}
 
 .contatos_2 {
     text-align: center; /* Centraliza o texto */
@@ -184,17 +184,18 @@ footer {
 .contatos_3 {
     display: flex; /* Usa flexbox para alinhamento */
     justify-content: center; /*Alinha no meio */
-    flex-direction: row; /*Bota lado a*/
     text-decoration: none; /* Remove sublinhado */
     font-family: var(--font-2); /* Fonte Bebas Neue */
-    gap: 12px; /* Espaçamento entre itens */
+    gap: 16px; /* Espaçamento entre itens */
     align-items: center; /* Alinha itens verticalmente */
     border-radius: 4px; /* Bordas arredondadas */
     color: #05037a; /* Cor do texto */
-    padding: 18px; /* Espaçamento interno */
-    max-width: 100%;
-    height: auto;
+    padding: 12px; /* Espaçamento interno */
+    transition: color 0.5s;
 
+}
+.contatos_3:hover{
+    color: rgb(30, 110, 110);;
 }
 
 /* Estilo de iframe */
