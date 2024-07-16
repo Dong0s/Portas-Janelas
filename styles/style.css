@@ -199,9 +199,10 @@ footer {
 
 /* Estilo de iframe */
 iframe {
-    display: flex; /* Usa flexbox para alinhamento */
-    justify-content: center; /* Centraliza horizontalmente */
-    width: 100%; /* Largura total */
+    display: flex;
+    width: 80%; /* Largura total */
+    margin: 0 auto;
+    height: 700px;
 }
 .borda_a {
     max-width: 100%;
@@ -213,6 +214,10 @@ iframe {
 .sumir1{
  margin: 40px;
 }
+.maps1{
+    border-radius: 12px;
+}
+
 
 /* Estilos responsivos */
 @media (max-width: 1800px){
@@ -226,17 +231,26 @@ font-size: 2em;
         flex: 1 1 100%; /* Ajusta para 1 coluna em telas pequenas */
     }
     .menu {
-        flex-direction: column; /* Alinha verticalmente */
         text-align: center; /* Centraliza o texto */
     }
     .menu li {
         margin: 10px 0; /* Espaçamento entre itens */
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .sumir1{
         display:none ;
     }
     .logo{
         text-align: center;
+    }
+    .contatos_3{
+
+        background-color: var(--cor-principal);
+    }
+    .maps1{
+        height: 500px;
+        width: 100%;
     }
 }
 
